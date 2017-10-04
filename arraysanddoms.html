@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays And Doms</title>
+	</head>
+	<body>
+		<h1 id="fruits"></h1>
+		
+
+		<script type="text/javascript">
+
+		//var input = prompt("Add more fruit");
+			var fruits =["apple","orange","kiwi"];
+		// this sorts out the list in alphabetical order.
+
+			
+
+			//to add an element to the end of the array
+			//push to add the user input into the array.s
+
+			var input= prompt("Add more Fruit");
+
+			input = input.toLowerCase();
+
+
+//adds new element to the end of array
+    		fruits.push(input);
+//makes input letters lowecase
+    		
+    		
+//orders list in alphabetical order.
+
+    		fruits.sort();
+    		
+
+
+
+
+	// this is to retrieve the user input for the prompt to add fruit.
+	// variable name.join() turns the array into a strings with the added text "with"
+	// to get spaces between each word, put quotations around space.
+
+
+
+
+			document.getElementById("fruits").innerHTML= fruits.join(" with ");
+			
+
+
+
+
+	</script>
+
+	</body>
+</html>
