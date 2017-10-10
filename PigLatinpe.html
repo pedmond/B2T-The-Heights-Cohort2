@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PigLatin</title>
+	</head>
+	<body>
+		<h2 id="cookies"></h2>
+			<script type="text/javascript">
+				
+				var text = prompt("enter a word");
+				//removing the first letter
+				document.getElementById("cookies").innerHTML = text.slice (1, text.length) + text.charAt(0) + "ay";
+				//using str. slice to remove the first letter. Using charAT to move the first letter to the end and then add ay last. So it can show up in the word.
+			</script>
+	</body>
+</html>
