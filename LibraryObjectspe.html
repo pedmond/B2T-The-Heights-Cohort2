@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Library Objects</title>
+	</head>
+	<body>
+		<!--creating a empty element with ID to dispaly the results for the statement.-->
+			<h1 id="foo"></h1>
+			<h1 id="moo"><h1>
+			<script type="text/javascript">
+				var library = [
+				{title: "'The Road Ahead' ", author: "'Bill Gates'", readingStatus: true},
+				{title: "'Walter Issacson'", author: "'Steve Jobs'", readingStatus: true},
+				{title: "'Mockingjay: The final book of the hunger games'", author: "'Jose Cansco'", readingStatus: false},
+			];
+				//var starts at 0 and the counts by 1 and goes through the loop's length.
+				//the conditions are met and the results are displayed on the screen. 
+				for (var i = 0; i < library.length; itt){
+					if(library[i].readingStatus == true){
+						document.getElementById("too").innerHTML="You have already read " + 
+				}			library[i].title + " by " +library[i].author + "."
+				else{
+					document.getElementById("moo").innerHTML= "You have read " + library[i].title + " by " + library[i].author + "."
+				}
+
+			}
+
+			</script>
+	</body>
+</html>
